@@ -1,21 +1,15 @@
-# PHP App Example
-
-## Requirements To Run Test
-1. Composer
-2. PHP7
-3. PHP Sockets Extensions Installed
-
-
-## Video Processing and RabbitMQ
-#### Overview
-The services shows a basic example of how to create a service for processing videos with RabbitMQ.
-
-#### How To Run
-1. Ensure RabbitMQ is installed and running locally
-3. Run `composer install` to install required packages
-4. Open up two tabs in your console
-5. In one tab, run `php server.php`
-6. In the other tab, run `php client.php`
+# PHP App de Nicolas Kieger
+# Configuration et mise en place:
+## - Commande afin de build le contenaire :
+    docker compose up --build -d
+## - Commande pour le run et ouvrir une interface bash :
+    docker compose exec -it php bash
+## - Une fois dans l'interface bash, mettre cette commande afin de démarrer le serveur :
+    php server.php
+## - Dans le navigateur, mettre l'URL suivante pour accéder à la page client: 
+    http://localhost:8080/client.php
+## - Dans le navigateur, mettre l'URL suivante pour accéder à la vidéo envoyé : 
+    http://localhost:8080/video.mp4
 
 ## Source
 <https://github.com/ProdigyView-Toolkit/Microservices-Examples-PHP>
