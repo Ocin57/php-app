@@ -25,7 +25,8 @@ $data = array(
 $msg = new AMQPMessage(json_encode($data), array('delivery_mode' => AMQPMessage::DELIVERY_MODE_PERSISTENT));
 $channel->basic_publish($msg, '', 'video_queue');
 
-echo "Sent Video To Server!'\n";
+echo 'Envoi de la vidéo au serveur! Voici le lien pour la vidéo :  <a href="http://localhost:8080/video.mp4"> Lien de la vidéo </a>';
+
 
 $channel->close();
 $connection->close();
