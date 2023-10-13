@@ -8,7 +8,7 @@
     php server.php
 ## - Dans le navigateur, mettre l'URL suivante pour accéder à la page client: 
     http://localhost:8080/client.php
-## - Dans le navigateur, mettre l'URL suivante pour accéder à la vidéo envoyé : 
+## - Dans le navigateur, mettre l'URL suivante pour accéder à la vidéo envoyée : 
     http://localhost:8080/video.mp4
 
 ## Source
